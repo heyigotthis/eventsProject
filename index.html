@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="events, sports, football, basketball">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Virtual University Events Guide</title>
+</head>
+<body>
+
+<header>
+    <!-- Simple lightgray navbar -->
+    <div class="navbar" style="background-color: lightgray">
+        <!-- navbar surrounds the container -->
+        <div class="container-fluid">
+
+            <!-- Logo & Title -->
+            <span style="font-size: 125%; color: black; margin-top: 4px; margin-bottom: 4px">
+                <img alt="logo" src="assets/img/logo-white.png" width="50" height="38" style="margin-right: 6px">
+                Virtual University Events Guide
+            </span>
+
+            <!-- The essential mobile menu button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- The collapsible menu container -->
+            <div class="navbar-collapse collapse" id="mainNavbar">
+                <!-- navbar menu items  -->
+                <ul style="list-style-type: none; margin-left: 0; padding-left: 0; margin-bottom: 0">
+                    <li><a class="nav-link active" href="index.html">Home</a></li>
+                    <!-- we use .active class for the active link and dim its color in the styles.css file -->
+                    <li><a class="nav-link" href="events.html">All Events</a></li>
+                    <li><a class="nav-link" href="about.html">About</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+<main class="container my-4">
+    <h2 class="mb-3" style="color: #3f4045;">Featured Events of the Week</h2>
+
+    <!-- Section for highlighting 3 top events of the week -->
+    <!-- Using a 12-column grid row, split into 3 equal blocks of size 4 for desktop screens -->
+    <div class="row">
+
+        <div class="col-md-4 mb-3">
+            <div class="card" style="background-color: #f8f9fa;">
+                <img src="assets/img/event1.jpg" alt="Event 1">
+                <!-- Inside layout for card structure (title, description, and link button) -->
+                <div class="m-3">
+                    <h5>University Football Championship</h5>
+                    <p>Join us for the final match of the season this Friday at the campus stadium.</p>
+                    <a href="event.html">
+                        <button type="button" class="btn btn-sm btn-secondary">View Details</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card" style="background-color: #f8f9fa;">
+                <img src="assets/img/event2.jpg" alt="Event 2">
+                <div class="m-3">
+                    <h5>Annual Tech Hackathon</h5>
+                    <p>Show your coding skills and build innovative solutions over the weekend.</p>
+                    <a href="event.html">
+                        <button type="button" class="btn btn-sm btn-secondary">View Details</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card" style="background-color: #f8f9fa;">
+                <img src="assets/img/event3.jpg" alt="Event 3">
+                <div class="m-3">
+                    <h5>Classical Music Night</h5>
+                    <p>An evening of wonderful performances by our university orchestra.</p>
+                    <a href="event.html">
+                        <button type="button" class="btn btn-sm btn-secondary">View Details</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Categories Buttons -->
+    <div class="container my-4" style="text-align: center;">
+        <h4 class="mb-3" style="color: #3f4045;">Quick Filter Categories</h4>
+
+        <button type="button" class="btn btn-outline-secondary m-1">All Categories</button>
+        <button type="button" class="btn btn-outline-primary m-1">Culture</button>
+        <button type="button" class="btn btn-outline-success m-1">Sports</button>
+        <button type="button" class="btn btn-outline-info m-1">Music</button>
+        <button type="button" class="btn btn-outline-warning m-1">Family</button>
+    </div>
+
+    <!-- Latest events section -->
+    <div class="container my-5">
+        <!-- Title with a line separator: we separate the line from text by a padding of 8px -->
+        <h3 class="mb-4" style="color: #3f4045; border-bottom: 2px solid lightgray; padding-bottom: 8px;">
+            Latest Events
+        </h3>
+
+        <div class="row">
+
+            <!-- each card takes 3/12 columns if the screen is large (4 cards per row) -->
+            <!-- each card takes 6/12 columns if the screen is medium (2 cards per row)-->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card" style="background-color: #f8f9fa;">
+
+                    <!-- The card contains this area which is separated from the card boarders by margin 3 -->
+                    <div class="m-3">
+                        <!-- Each card contains: title + text + "read more" button -->
+                        <h6 style="font-weight: bold;">Campus Basketball Tournament</h6>
+                        <p class="mb-3" style="font-size: 14px; color: #555;">Registration opens this Monday for all
+                            university departments.</p>
+                        <a href="event.html">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Read More</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card" style="background-color: #f8f9fa;">
+                    <div class="m-3">
+                        <h6 style="font-weight: bold;">Annual Spring Art Gallery</h6>
+                        <p class="mb-3" style="font-size: 14px; color: #555;">Showcasing stunning visual art pieces
+                            created by fine arts students.</p>
+                        <a href="event.html">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Read More</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card" style="background-color: #f8f9fa;">
+                    <div class="m-3">
+                        <h6 style="font-weight: bold;">Evening of Poetry & Prose</h6>
+                        <p class="mb-3" style="font-size: 14px; color: #555;">A quiet night of live readings and
+                            creative writing presentations.</p>
+                        <a href="event.html">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Read More</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card" style="background-color: #f8f9fa;">
+                    <div class="m-3">
+                        <h6 style="font-weight: bold;">University Bullet Chess Open</h6>
+                        <p class="mb-3" style="font-size: 14px; color: #555;">Fast-paced blitz and bullet chess matches
+                            open to all skill levels.</p>
+                        <a href="event.html">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Read More</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</main>
+
+<footer style="background-color: #3f4045; color: white; padding: 30px; margin-top: 50px;">
+
+    <h5 style="color: lightgray;">Contact Information</h5>
+    <!-- Overwriting the default <p> margin-bottom which is large with a smaller one (5px) -->
+    <p style="font-size: 14px; margin-bottom: 5px;">Email: info@virtualuniversity.edu.sy</p>
+    <p style="font-size: 14px; margin-bottom: 5px;">Phone: +963 99 9999</p>
+    <p style="font-size: 14px; margin-bottom: 5px;">Address: Damascus, Syria</p>
+
+
+    <br />
+    <h5 style="color: lightgray;">Follow Us</h5>
+    <a href="https://facebook.com" target="_blank"
+       style="color: white; text-decoration: none; margin-right: 15px; font-size: 14px;">Facebook</a>
+    <a href="https://twitter.com" target="_blank"
+       style="color: white; text-decoration: none; margin-right: 15px; font-size: 14px;">Twitter/X</a>
+    <a href="https://instagram.com" target="_blank"
+       style="color: white; text-decoration: none; font-size: 14px;">Instagram</a>
+
+
+    <div style="border-top: 1px solid #888888; font-size: 13px; color: lightgray; text-align: center; padding-top: 20px;">
+        <!-- margin-bottom 0 prevents <p> from creating a blank line after it -->
+        <p style="margin-bottom: 0">&copy; 2026 Virtual University Events Guide. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
