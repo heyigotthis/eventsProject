@@ -23,8 +23,3 @@ body {
 {
     color: #0a53be;
 }
-
-h4 button:hover
-{
-    background-color: var(--bs-border-color);
-}
