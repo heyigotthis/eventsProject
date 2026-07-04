@@ -1,0 +1,30 @@
+/* Download required fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Tajawal:wght@400;700&display=swap');
+
+body {
+    font-family: 'Tajawal', 'Cairo', sans-serif;
+}
+
+/* Just a basic target for links inside the menu */
+#mainNavbar ul li a
+{
+    padding: 8px;
+    color: #3f4045;
+}
+
+/* The active link is a bit grayer */
+#mainNavbar ul li a.active
+{
+    color: #7a8090;
+}
+
+/* Simple hover effect */
+#mainNavbar ul li a:hover
+{
+    color: #0a53be;
+}
+
+h4 button:hover
+{
+    background-color: var(--bs-border-color);
+}
