@@ -24,7 +24,19 @@ body {
     color: #0a53be;
 }
 
-button
+#backToTopButton
 {
-   text-align: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    visibility: hidden;
+    border: none;
+    opacity: 0;
+}
+
+#backToTopButton.isVisible
+{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s ease, visibility 0.5s;
 }
