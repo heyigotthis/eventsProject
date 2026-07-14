@@ -57,3 +57,24 @@ function filter()
         }
     }
 }
+
+// look at the URL parameter and show the matching card container on screen
+function showSelectedEvent()
+{
+    var urlParams = window.location.search; // get the url of the page
+    var eventId = "football"; //default football also useful for testing
+
+    // parse the string using index tracking to catch the true ID value
+    if (urlParams.indexOf("id=") !== -1)
+    {
+        // the url must have an equal sign such as event.html?id=football
+        var equalSign = urlParams.indexOf("=");
+        eventId = urlParams.substring(equalSign + 1); //eventId is everything after the equal sign e.g. football
+    }
+
+    // Hide all events
+    $('.detailView').hide();
+
+    // Show only the one with the id
+    $('#' + eventId).show();
+}
