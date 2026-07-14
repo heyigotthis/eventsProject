@@ -2,9 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="events, sports, football, basketball">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js" type="text/javascript"></script>
+    <title>Virtual University Events Guide</title>
 </head>
 <body>
+
+<header id="headerElement">
+    <!-- Simple lightgray navbar -->
+    <div class="navbar" style="background-color: lightgray">
+        <!-- navbar surrounds the container -->
+        <div class="container-fluid">
+
+            <!-- Logo & Title -->
+            <span style="font-size: 125%; color: black; margin-top: 4px; margin-bottom: 4px">
+                <img alt="logo" src="assets/img/logo-white.png" width="50" height="38" style="margin-right: 6px">
+                Virtual University Events Guide
+            </span>
+
+            <!-- The essential mobile menu button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- The collapsible menu container -->
+            <div class="navbar-collapse collapse" id="mainNavbar">
+                <!-- navbar menu items  -->
+                <ul style="list-style-type: none; margin-left: 0; padding-left: 0; margin-bottom: 0">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <!-- we use .active class for the active link and dim its color in the styles.css file -->
+                    <li><a class="nav-link" href="events.html">All Events</a></li>
+                    <li><a class="nav-link active" href="about.html">About</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</header>
+<!-- everything above was copied from index.html -->
+
+
+<main class="container my-5">
+    
+</main>
+
+
+<!-- footer copied from index.html -->
+<footer style="background-color: #3f4045; color: white; padding: 30px; margin-top: 50px;">
+
+    <div>
+        <h5 style="color: lightgray;">Contact Information</h5>
+        <!-- Overwriting the default <p> margin-bottom which is large with a smaller one (5px) -->
+        <p style="font-size: 14px; margin-bottom: 5px;">Email: info@virtualuniversity.edu.sy</p>
+        <p style="font-size: 14px; margin-bottom: 5px;">Phone: +963 99 9999</p>
+        <p style="font-size: 14px; margin-bottom: 5px;">Address: Damascus, Syria</p>
+    </div>
+
+    <div>
+        <br/>
+        <!-- Title "Follow Us" is lightgray so it's slightly different from normal white text in this area. -->
+        <h5 style="color: lightgray;">Follow Us</h5>
+        <!-- 3 links on the same line separated by margin-right. -->
+        <!-- We don't want the links to look blue and underlined. -->
+        <a href="https://facebook.com" target="_blank"
+           style="color: white; text-decoration: none; margin-right: 15px; font-size: 14px;">Facebook</a>
+        <a href="https://twitter.com" target="_blank"
+           style="color: white; text-decoration: none; margin-right: 15px; font-size: 14px;">Twitter/X</a>
+        <a href="https://instagram.com" target="_blank"
+           style="color: white; text-decoration: none; font-size: 14px;">Instagram</a>
+    </div>
+
+    <div style="border-top: 1px solid #888888; font-size: 13px; color: lightgray; text-align: center; padding-top: 20px;">
+        <!-- margin-bottom 0 prevents <p> from creating a blank line after it -->
+        <p style="margin-bottom: 0">&copy; 2026 Virtual University Events Guide. All Rights Reserved.</p>
+    </div>
+</footer>
 
 </body>
 </html>
