@@ -24,24 +24,22 @@ body {
     color: #0a53be;
 }
 
+/* The back-to-top button is in a fixed position in the bottom right corner. */
+/* We set the size of the button 40x40 pixels,
+    but the arrow image inside the button is 20x20 pixels (refer to html code) so it fits well. */
 #backToTopButton
 {
     position: fixed;
     bottom: 30px;
     right: 30px;
     visibility: hidden;
-    border: none;
     opacity: 0;
+    border: black solid 1px;
 
-    /* Human touch: Give it your signature dark gray color and a nice size */
-    background-color: lightgray;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer; /* Makes the mouse cursor turn into a pointer finger on hover */
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.3); /* Adds a tiny shadow so it pops off the page */
+    background-color: darkgray;
+    width: 40px;
+    height: 40px;
+
 }
 
 #backToTopButton.isVisible
